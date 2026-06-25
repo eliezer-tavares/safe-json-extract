@@ -1,0 +1,32 @@
+{
+  "name": "safe-json-extract",
+  "version": "1.0.0",
+  "description": "Extract, validate and repair JSON from LLM output.",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "keywords": [
+    "json",
+    "llm",
+    "openai",
+    "anthropic",
+    "gemini",
+    "grok",
+    "qwen",
+    "deepseek",
+    "ollama",
+    "parser",
+    "agent"
+  ],
+  "author": "Eliezer Tavares de Oliveira",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eliezertavares/safe-json-extract.git"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test"
+  }
+}
