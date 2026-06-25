@@ -1,7 +1,7 @@
 {
   "name": "safe-json-extract",
-  "version": "1.0.0",
-  "description": "Extract, validate and repair JSON from LLM output.",
+  "version": "1.1.0",
+  "description": "A zero-dependency JavaScript library for safely extracting, repairing, and parsing JSON from LLM-generated outputs.",
   "main": "src/index.js",
   "type": "commonjs",
   "keywords": [
@@ -15,14 +15,26 @@
     "deepseek",
     "ollama",
     "parser",
-    "agent"
+    "agent",
+    "ai",
+    "llm-output",
+    "json-repair",
+    "data-extraction"
   ],
-  "author": "Eliezer Tavares de Oliveira",
+  "author": {
+    "name": "Eliezer Tavares de Oliveira",
+    "email": "contact@eliezertavaresdeoliveira.com",
+    "url": "https://github.com/eliezer-tavares"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/eliezertavares/safe-json-extract.git"
+    "url": "https://github.com/eliezer-tavares/safe-json-extract.git"
   },
+  "bugs": {
+    "url": "https://github.com/eliezertavares/safe-json-extract/issues"
+  },
+  "homepage": "https://github.com/eliezertavares/safe-json-extract#readme",
   "engines": {
     "node": ">=18"
   },

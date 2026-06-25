@@ -41,4 +41,29 @@ test('public api exports', () => {
         'function'
     );
 
+    assert.strictEqual(
+        typeof api.extractAllJson,
+        'function'
+    );
+
+    assert.strictEqual(
+        typeof api.recoverTruncatedJson,
+        'function'
+    );
+
+    assert.strictEqual(
+        typeof api.extractFirstValid,
+        'function'
+    );
+
+    assert.strictEqual(
+        typeof api.extractAllCodeBlocks,
+        'function'
+    );
+
+    assert.strictEqual(
+        typeof api.parseLLMResponse,
+        'function'
+    );
+
 });

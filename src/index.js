@@ -1,35 +1,49 @@
 /**
-
-* safe-json-extract
-*
-* Author:
-* Eliezer Tavares de Oliveira
-*
-* License:
-* MIT
-  */
+ * safe-json-extract
+ *
+ * Author:
+ * Eliezer Tavares de Oliveira
+ *
+ * License:
+ * MIT
+ */
 
 module.exports = {
 
-extractJson:
-require('./extractJson'),
+  extractJson:
+    require('./extractJson'),
 
-extractArray:
-require('./extractArray'),
+  extractArray:
+    require('./extractArray'),
 
-safeParse:
-require('./safeParse'),
+  safeParse:
+    require('./safeParse'),
 
-repairJson:
-require('./repairJson'),
+  repairJson:
+    require('./repairJson'),
 
-isJson:
-require('./isJson'),
+  isJson:
+    require('./isJson'),
 
-extractCodeBlock:
-require('./extractCodeBlock'),
+  extractCodeBlock:
+    require('./extractCodeBlock'),
 
-normalizeJson:
-require('./normalizeJson')
+  normalizeJson:
+    require('./normalizeJson'),
+
+  extractAllJson:
+    require('./extractAllJson'),
+
+  recoverTruncatedJson:
+    require('./recoverTruncatedJson'),
+
+  extractFirstValid:
+    require('./extractFirstValid'),
+
+  extractAllCodeBlocks:
+    require('./extractAllCodeBlocks'),
+
+  parseLLMResponse:
+    require('./parseLLMResponse')
 
 };
