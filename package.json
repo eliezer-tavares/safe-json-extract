@@ -4,6 +4,15 @@
   "description": "A zero-dependency JavaScript library for safely extracting, repairing, and parsing JSON from LLM-generated outputs.",
   "main": "src/index.js",
   "type": "commonjs",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
   "keywords": [
     "json",
     "llm",
@@ -29,12 +38,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/eliezer-tavares/safe-json-extract.git"
+    "url": "git+https://github.com/eliezer-tavares/safe-json-extract.git"
   },
   "bugs": {
-    "url": "https://github.com/eliezertavares/safe-json-extract/issues"
+    "url": "https://github.com/eliezer-tavares/safe-json-extract/issues"
   },
-  "homepage": "https://github.com/eliezertavares/safe-json-extract#readme",
+  "homepage": "https://github.com/eliezer-tavares/safe-json-extract#readme",
   "engines": {
     "node": ">=18"
   },
