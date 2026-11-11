@@ -1,5 +1,7 @@
 # safe-json-extract
 
+https://github.com/eliezer-tavares/safe-json-extract/actions/workflows/ci.yml/badge.svg
+
 A production-grade, zero-dependency JavaScript library for safely extracting, repairing, and parsing JSON from LLM-generated outputs.
 
 ---
