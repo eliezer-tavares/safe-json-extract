@@ -1,13 +1,13 @@
-# safe-json-extract
+﻿# safe-json-extract
 
-[![CI](https://github.com/eliezer-tavares/safe-json-extract/actions/workflows/ci.yml/badge.svg)](https://github.com/eliezer-tavares/safe-json-extract/actions/workflows/ci.yml)
+[![CI](https://github.com/eliezer-tavares/safe-json-extract/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/eliezer-tavares/safe-json-extract/actions/workflows/ci.yml)
 [![npm version](https://img.shields.io/npm/v/safe-json-extract.svg)](https://www.npmjs.com/package/safe-json-extract)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Node](https://img.shields.io/node/v/safe-json-extract.svg)](https://www.npmjs.com/package/safe-json-extract)
 
 A production-grade, zero-dependency JavaScript library for safely extracting, repairing, and parsing JSON from LLM-generated outputs.
 
-**v1.1.0** · 12 functions · Node.js ≥ 18 · runs on Node.js, Bun, Deno and browsers
+**v1.1.0** Â· 12 functions Â· Node.js â‰¥ 18 Â· runs on Node.js, Bun, Deno and browsers
 
 ---
 
@@ -127,7 +127,7 @@ All 12 exported functions are pure, dependency-free and never throw.
 
 | Function | Description |
 | --- | --- |
-| `isJson(text)` | Returns `true`/`false` — strict validation of a JSON string, no repair attempts. |
+| `isJson(text)` | Returns `true`/`false` â€” strict validation of a JSON string, no repair attempts. |
 | `safeParse(text)` | `JSON.parse` without throwing. Returns a structured result (see [Error handling model](#error-handling-model)). |
 
 ### Repair and normalization
@@ -135,7 +135,7 @@ All 12 exported functions are pure, dependency-free and never throw.
 | Function | Description |
 | --- | --- |
 | `repairJson(text)` | Returns a repaired JSON string: converts single quotes to double quotes, removes trailing commas, strips markdown fences and trims whitespace. |
-| `recoverTruncatedJson(text)` | Balances unclosed braces by appending the missing `}` characters — for outputs cut off mid-object. |
+| `recoverTruncatedJson(text)` | Balances unclosed braces by appending the missing `}` characters â€” for outputs cut off mid-object. |
 | `normalizeJson(obj)` | Returns a shallow copy of an object with all keys lowercased, for case-consistent access. |
 
 ### High-level
@@ -160,7 +160,7 @@ Instead of throwing errors, the library always returns structured results:
 }
 ```
 
-This ensures predictable control flow — no `try/catch` gymnastics around LLM output.
+This ensures predictable control flow â€” no `try/catch` gymnastics around LLM output.
 
 ---
 
@@ -204,7 +204,7 @@ Its goal is to make unpredictable outputs usable in production systems.
 
 ## Compatibility
 
-- Node.js ≥ 18 (LTS)
+- Node.js â‰¥ 18 (LTS)
 - Bun
 - Deno
 - Browser environments
@@ -213,7 +213,7 @@ Its goal is to make unpredictable outputs usable in production systems.
 
 ## Performance
 
-- No dependencies — the whole library is ~600 lines of auditable JavaScript
+- No dependencies â€” the whole library is ~600 lines of auditable JavaScript
 - Lightweight execution
 - Designed for high-frequency parsing
 - Safe for backend pipelines and serverless/edge environments
@@ -234,15 +234,15 @@ Its goal is to make unpredictable outputs usable in production systems.
 
 ## Project
 
-**Author** — Eliezer Tavares de Oliveira
-Computer Engineering Student — UNIVESP
+**Author** â€” Eliezer Tavares de Oliveira
+Computer Engineering Student â€” UNIVESP
 
 - GitHub: https://github.com/eliezer-tavares
 - Email: contact@eliezertavaresdeoliveira.com
 
-**License** — MIT. This project is free to use, modify, and distribute.
+**License** â€” MIT. This project is free to use, modify, and distribute.
 
-**Contributing** — contributions are welcome. You can help by:
+**Contributing** â€” contributions are welcome. You can help by:
 
 - reporting edge cases from LLM outputs
 - improving parsing robustness
@@ -257,15 +257,16 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 | Version | Status | Theme |
 | --- | --- | --- |
-| 1.1.0 | ✅ Released | Markdown support, multi-JSON extraction, truncation recovery, normalization |
-| 1.2.0 | 🔜 Next | Advanced JSON recovery: nested structures, malformed objects, partial reconstruction |
-| 2.0.0 | 🔭 Planned | Streaming support: chunk parsing and real-time agent processing |
-| 3.0.0 | 💭 Exploring | Provider plugin system and structured adapters (OpenAI, Grok, Qwen, Claude) |
+| 1.1.0 | âœ… Released | Markdown support, multi-JSON extraction, truncation recovery, normalization |
+| 1.2.0 | ðŸ”œ Next | Advanced JSON recovery: nested structures, malformed objects, partial reconstruction |
+| 2.0.0 | ðŸ”­ Planned | Streaming support: chunk parsing and real-time agent processing |
+| 3.0.0 | ðŸ’­ Exploring | Provider plugin system and structured adapters (OpenAI, Grok, Qwen, Claude) |
 
-➡️ **Full roadmap with details:** [docs/roadmap.md](docs/roadmap.md)
+âž¡ï¸ **Full roadmap with details:** [docs/roadmap.md](docs/roadmap.md)
 
 ---
 
 ## Final note
 
 If you have ever received an LLM response that is "almost JSON but not quite valid", this library was built for that exact problem.
+
