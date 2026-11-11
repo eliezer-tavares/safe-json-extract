@@ -1,0 +1,19 @@
+# Normalize line endings: repository stores LF, working copy gets LF everywhere.
+# Prevents CRLF/LF churn between Windows and Linux contributors.
+* text=auto eol=lf
+
+# Windows-only scripts that must keep CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Binary assets (never normalize)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.zip binary
+*.tgz binary

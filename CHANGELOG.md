@@ -7,6 +7,24 @@ and this project uses Semantic Versioning.
 
 ---
 
+## [Unreleased]
+
+### Added
+
+- `.gitattributes` enforcing LF line endings across platforms (prevents CRLF/LF churn between Windows and Linux)
+
+### Changed
+
+- Documentation restructured: `docs/roadmap.md` is now the single source of truth for versions, and the README shows only a summary table linked to it
+- Historical planning document moved from `docs/v1.1.md` to `docs/releases/v1.1-plan.md`
+- README rewritten: proper CI badge (linked to the Actions page), npm/license/Node badges, full API reference covering all 12 exported functions, and a table of contents
+
+### Fixed
+
+- CI workflow: corrected invalid YAML indentation in `.github/workflows/ci.yml` that made every run fail before any job could execute (runs #1–#3)
+
+---
+
 ## [1.1.0] - 2026-06-25
 
 ### Added
@@ -64,3 +82,9 @@ and this project uses Semantic Versioning.
 
 - First stable release of safe-json-extract
 - Focused on deterministic parsing of LLM outputs
+
+---
+
+[Unreleased]: https://github.com/eliezer-tavares/safe-json-extract/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/eliezer-tavares/safe-json-extract/compare/v1.0.0...v1.1.0
+[1.0.0]: https://github.com/eliezer-tavares/safe-json-extract/releases/tag/v1.0.0
